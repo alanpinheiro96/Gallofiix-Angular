@@ -1,0 +1,18 @@
+Config do GIT:
+    git config --global user.name alanpinheiro96
+    git config --global user.email alantnt15@gmail.com
+
+Criar o projeto:
+    ng new galloflix
+
+Executar o projeto:
+    ng serve -o
+
+Criar novos componentes:
+    ng g(generate) c(component) pages/home
+     ng g c pages/home
+     ng g c pages/search
+     ng g c pages/details
+
+Criar um serviço:
+    ng g s services/movieApi
