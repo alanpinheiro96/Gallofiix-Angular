@@ -64,7 +64,12 @@ export class MovieApiService {
   }
 
   // Buscar um ator ou atriz
-  personDetails(type: any, value: any): Observable<any> {
+  personDetails(value: any): Observable<any> {
     return this.http.get(`${this.baseUrl}/person/${value}?language=pt-br`, this.options)
+  }
+
+  // Metodo Pesquisar
+  searchMedia(value: any, page: any = 1) : Observable<any> {
+    return this.http.get(`${this.baseUrl}/search/multi?query=${value}&language=pt-br&include_adult=false&page=${page}`, this.options)
   }
 }
